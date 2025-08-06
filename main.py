@@ -31,7 +31,7 @@ class ContinuousSpeechGloss:
     Runs in the background and processes speech without auto-stopping.
     """
 
-    def __init__(self, model_path="vosk-model-en-us-0.22-lgraph", callback=None):
+    def __init__(self, model_path="vosk-model-small-en-us-0.15", callback=None):
         """
         Initialize continuous speech recognition.
 

@@ -3,14 +3,14 @@
 block_cipher = None
 
 a = Analysis(
-    ['expY.py'],
+    ['main.py'],
     pathex=[],
     binaries=[],
     datas=[
         ('character/*.glb', 'character'),  # Include all GLB model files
         ('sign_poses.json', '.'),    # Include sign poses data
         ('skybox/*.egg', 'skybox'),  # Include skybox if used
-        ('vosk-model-en-us-0.22', 'vosk-model-en-us-0.22'),  # Include Vosk model
+        ('vosk-model-small-en-us-0.15', 'vosk-model-small-en-us-0.15'),  # Include Vosk model
     ],
     hiddenimports=[
         'direct.showbase',
