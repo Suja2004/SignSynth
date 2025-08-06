@@ -1,28 +1,24 @@
-from direct.showbase.ShowBase import ShowBase
-from panda3d.core import TextNode, Vec4, Point3, NodePath, LVecBase3f, DirectionalLight, AmbientLight
-from direct.gui.OnscreenText import OnscreenText
-from direct.gui.OnscreenImage import OnscreenImage
-from direct.gui.DirectButton import DirectButton
-from direct.gui.DirectFrame import DirectFrame
-from direct.gui.DirectEntry import DirectEntry
-from direct.gui.DirectLabel import DirectLabel
-from direct.gui import DirectGuiGlobals as DGG
-from direct.task import Task
-from direct.interval.LerpInterval import LerpPosInterval, LerpHprInterval
-from direct.interval.IntervalGlobal import Sequence
 import json
+import queue
+import string
+import sys
 import threading
 import time
-import pyaudio
-from vosk import Model, KaldiRecognizer
+
 import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-import string
-import queue
-import random
-import sys
+import pyaudio
 import win32com.client
+from direct.gui.DirectButton import DirectButton
+from direct.gui.DirectFrame import DirectFrame
+from direct.gui.OnscreenText import OnscreenText
+from direct.interval.IntervalGlobal import Sequence
+from direct.interval.LerpInterval import LerpPosInterval, LerpHprInterval
+from direct.showbase.ShowBase import ShowBase
+from direct.task import Task
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from panda3d.core import LVecBase3f, DirectionalLight, AmbientLight
+from vosk import Model, KaldiRecognizer
 
 
 class ContinuousSpeechGloss:
